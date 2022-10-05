@@ -27,7 +27,22 @@ router.get('/ContactMe', function(req, res, next) {
     title: 'ContactMe',
     name: 'Richard'
   });
+});
 
+/* GET About Me Page. */
+router.get('/AboutMe', function(req, res, next) {
+  res.render('AboutMe',{
+    title: 'AboutMe',
+    name: 'Richard'
+  });
+});
+
+/* GET Services Page. */
+router.get('/Services', function(req, res, next) {
+  res.render('Services',{
+    title: 'Services',
+    name: 'Richard'
+  });
 });
 
 module.exports = router;
