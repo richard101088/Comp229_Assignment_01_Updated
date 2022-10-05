@@ -29,29 +29,38 @@
       </li>
       <li class="nav-item">
         <% if (title == "Projects") { %>
-            <a class="nav-link active" href="Projects">
+            <a class="nav-link active" href="/Projects">
         <% } else { %>
-            <a class="nav-link" href="/projects">
+            <a class="nav-link" href="Projects">
         <% } %>            
-            <i class="fas fa-home"></i> Projects </a>
+        <i class="fa-solid fa-diagram-project"></i> Projects </a>
         </a>
       </li>
       <li class="nav-item">
         <% if (title == "AboutMe") { %>
-            <a class="nav-link active" href="views/AboutMe.ejs">
+            <a class="nav-link active" href="/AboutMe">
         <% } else { %>
-            <a class="nav-link" href="/AboutMe">
+            <a class="nav-link" href="AboutMe">
         <% } %>            
-            <i class="fas fa-home"></i> About </a>
+        <i class="fa-light fa-user-secret"></i>About Me</a>
         </a>
       </li>
       <li class="nav-item">
-        <% if (title == "Users") { %>
-            <a class="nav-link active" href="/users">
+        <% if (title == "ContactMe") { %>
+            <a class="nav-link active" href="/ContactMe">
         <% } else { %>
-            <a class="nav-link" href="/users">
+            <a class="nav-link" href="ContactMe">
         <% } %>            
-            <i class="fas fa-user"></i> Users </a>
+        <i class="fa-light fa-address-book"></i> Contact Me </a>
+        </a>
+      </li>
+      <li class="nav-item">
+        <% if (title == "Services") { %>
+            <a class="nav-link active" href="/Services">
+        <% } else { %>
+            <a class="nav-link" href="Services">
+        <% } %>            
+        <i class="fa-light fa-user-secret"></i> Services </a>
         </a>
       </li>
       

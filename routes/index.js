@@ -13,7 +13,7 @@ router.get('/', function(req, res, next) {
   });
 });
 
-/* GET home page. */
+/* GET Project page. */
 router.get('/Projects', function(req, res, next) {
   res.render('Projects',{
     title: 'Projects',
@@ -21,13 +21,12 @@ router.get('/Projects', function(req, res, next) {
   });
 });
 
-/* GET About Page. */
-router.get('/AboutMe', function(req, res, next) {
-  res.render('AboutMe',{
-    title: 'AboutMe',
+/* GET About Me Page. */
+router.get('/ContactMe', function(req, res, next) {
+  res.render('ContactMe',{
+    title: 'ContactMe',
     name: 'Richard'
   });
-
 
 });
 
