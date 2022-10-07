@@ -8,7 +8,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid rgb(204, 204, 204);
+  border: 10px solid rgb(204, 204, 204);
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
@@ -38,8 +38,8 @@ input[type=submit]:hover {
 </head>
 <body>
 
-<h3><center><b>Contact Form</b></center></h3>
-
+<h3><center><b><br>Contact Me Here</b></center></h3>
+<% include partials/footer_2.ejs %>
 <div class="container">
   <form action="/action_page.php">
     <label for="fname">First Name</label>
@@ -61,4 +61,3 @@ input[type=submit]:hover {
     <input type="submit" value="Submit">
   </form>
 </div>
-<% include partials/footer_2.ejs %>
