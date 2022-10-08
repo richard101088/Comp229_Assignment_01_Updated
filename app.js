@@ -4,6 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+//---initialize--//
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
@@ -20,6 +21,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'node_modules')));
 
+//------Index router----//
 app.use('/', indexRouter);
 app.use('/Projects', indexRouter);
 app.use('/AboutMe', indexRouter);
@@ -27,7 +29,7 @@ app.use('/Services', indexRouter);
 app.use('/ContactMe', indexRouter);
 app.use('/files', usersRouter);
 
-// catch 404 and forward to error handler
+// catch 404 and forward to error handler ----call back method---//
 app.use(function(req, res, next) {
   next(createError(404));
 });
